@@ -11,4 +11,6 @@ The rules and regulations of the quiz are as follows:
 
 CAUTION: Any wrong answer would deduct 1 point.
 
+Quiz Link: https://replit.com/@AritraChowdhury/assignmentOne?embed=1&output=1#index.js
+
 TechStack used: javaScript
