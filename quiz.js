@@ -76,6 +76,31 @@ var questionTen = {
     "Question 10. An array in the Java programming language has the ability to store many different types of values ?? TRUE or FALSE: ",
   answer: "False",
 };
+var questionEleven = {
+  question:
+    "Question 11. The access level of an overridden method cannot be changed in a subclass ?? TRUE or FALSE: ",
+  answer: "False",
+};
+var questionTwelve = {
+  question:
+    "Question 12. When a method or a variable in a class is declared as private, it can only be accessed by the methods within the same class ?? TRUE or FALSE: ",
+  answer: "True",
+};
+var questionThirteen = {
+  question:
+    "Question 13. A method declaration must always contain the access level ?? TRUE or FALSE: ",
+  answer: "False",
+};
+var questionFourteen = {
+  question:
+    "Question 14. A method declared as final can be overridden by subclasses if it is also declared as static ?? TRUE or FALSE: ",
+  answer: "False",
+};
+var questionFifteen = {
+  question:
+    "Question 15. Each method in a class must have a unique name ?? TRUE or FALSE: ",
+  answer: "False",
+};
 var questionSetOne = [
   questionOne,
   questionTwo,
@@ -113,20 +138,32 @@ if (score === 5) {
   for (var i = 0; i < questionSetTwo.length; i++) {
     play(questionSetTwo[i].question, questionSetTwo[i].answer);
   }
+}
 
-  console.log("Your current score is: " + score);
+console.log("Your current score is: " + score);
 
-  if (score === 10) {
-    console.log("You have completed " + chalk.green("LVL 2"));
-    console.log("Qualified for " + chalk.green("LVL 3"));
-    console.log("Questions for LVL 3 is comming...");
-  } else {
-    console.log(chalk.red("Not qualified for LVL 3"));
-    console.log("Your current score is: " + score);
-    console.log(chalk.green("Better Luck Next Time !!"));
+if (score === 10) {
+  console.log("You have completed " + chalk.green("LVL 2"));
+  console.log("Qualified for " + chalk.green("LVL 3"));
+  console.log("Questions for LVL 3 is comming...");
+  var questionSetThree = [
+    questionEleven,
+    questionTwelve,
+    questionThirteen,
+    questionFourteen,
+    questionFifteen,
+  ];
+  for (var i = 0; i < questionSetThree.length; i++) {
+    play(questionSetThree[i].question, questionSetThree[i].answer);
   }
 } else {
-  console.log(chalk.red("Not qualified for LVL 2"));
+  console.log(chalk.red("Not qualified for LVL 3"));
   console.log("Your current score is: " + score);
   console.log(chalk.green("Better Luck Next Time !!"));
 }
+console.log("Your current score is: " + score);
+console.log(
+  chalk.bgGreenBright("CONGRATULATIONS !!") +
+    "You have completed all the LVLs of the quiz"
+);
+console.log("Thank You for Participating :)");
